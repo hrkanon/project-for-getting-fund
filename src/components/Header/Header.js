@@ -8,7 +8,7 @@ const Header = () => {
         An welfare society for the people who are needed a simple push to make
         their life better and impact the others of our society
       </p>
-      <h2> Total Budget : $120 Million</h2>
+      <h2> Total Budget : $10 Million</h2>
     </div>
   );
 };
