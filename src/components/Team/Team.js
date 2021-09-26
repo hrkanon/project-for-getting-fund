@@ -7,8 +7,8 @@ const Team = () => {
   const [members, setMembers] = useState([]);
   const [persons, setPersons] = useState([]);
 
-  const handleAddPerson = (member) => {
-    const newPerson = [...persons, member];
+  const handleAddPerson = (person) => {
+    const newPerson = [...persons, person];
     setPersons(newPerson);
   };
   useEffect(() => {
@@ -19,8 +19,8 @@ const Team = () => {
   return (
     <div>
       <div className="row my-4">
-        <div className="col-md-9">
-          <div className="row row-cols-md-3 g-3">
+        <div className="col-md-12 col-lg-9">
+          <div className="row row-cols-md-2 row-cols-lg-3 g-3">
             {members.map((member) => (
               <Member
                 key={member.id}

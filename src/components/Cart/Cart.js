@@ -7,13 +7,15 @@ const Cart = (props) => {
     preValue + currentValue.donation;
   const total = persons.reduce(totalReducer, 0);
   return (
-    <div className="shadow p-3 mb-2 bg-body rounded">
-      <h4>
-        <i className="fas fa-user"></i> Members Added: {persons.length}
+    <div className="shadow p-3 mb-2 rounded bg-primary bg-opacity-75 text-white">
+      <h4 className="text-right">
+        <i className="fas fa-user"></i>
+        <span> {persons.length} added</span>
       </h4>
-      <h5>
-        Total Donation: <span className="text-warning fw-bold">${total}</span>{" "}
-      </h5>
+      <h4>
+        Received:
+        <span className="fw-bold"> ${total}</span>
+      </h4>
       <ul>
         {persons.map((person) => (
           <li className="fw-bold" key={person.id}>

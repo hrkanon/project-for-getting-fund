@@ -7,7 +7,7 @@ const Member = (props) => {
   const { handleAddPerson } = props;
   return (
     <div className="col">
-      <div className="card border-0 shadow p-3 mb-2 bg-body rounded">
+      <div className="card border-0 shadow p-3 mb-4 rounded">
         <div className="mx-auto">
           <img
             src={image}
@@ -16,7 +16,7 @@ const Member = (props) => {
           />
         </div>
         <div className="card-body">
-          <h5 className="card-title">{name}</h5>
+          <h4 className="card-title">{name}</h4>
           <p className="card-text">Age: {age}</p>
           <p className="card-text">Profession: {profession}</p>
           <p className="card-text">Company: {company}</p>
@@ -27,7 +27,7 @@ const Member = (props) => {
         </div>
         <div>
           <button
-            className="btn btn-primary w-100"
+            className="btn bg-primary bg-opacity-75 w-100 text-white"
             onClick={() => handleAddPerson(props.member)}
           >
             <i className="fas fa-shopping-cart"></i> Add to Card
